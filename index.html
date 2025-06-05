@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tuku Exe | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Loader */
+    #loader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #111;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 3s ease, visibility 3s ease;
+    }
+    .spinner {
+      width: 50px; height: 50px;
+      border: 6px solid #444;
+      border-top: 6px solid #00bfff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    body.loaded #loader { opacity: 0; visibility: hidden; }
+  </style>
+</head>
+<body>  <!-- Loading Screen -->  <div id="loader">
+    <div class="spinner"></div>
+    <h2>Loading page... wait</h2>
+  </div>  <!-- Navigation -->  <header class="navbar">
+    <h1 class="logo">Tuku Exe</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <!-- Main Content -->  <main>
+    <section id="about">
+      <img src="contact-me-tukub768outlook-com.jpg" alt="Tuku Exe" class="profile-img" />
+      <h2>About Me</h2>
+      <p>Hi, I’m Tuku Exe, a passionate and self-driven full-stack web developer and AI LLM engineer from Kaziranga. Born on January 17, 2009, I’ve been immersed in the world of code from an early age, exploring everything from front-end design to advanced artificial intelligence. My journey is defined by creativity, curiosity, and a relentless drive to build the future of the web.</p><p>I specialize in crafting clean, efficient, and scalable web solutions using HTML, CSS, JavaScript (ES6+), Node.js, and frameworks like Express.js and React. I’ve worked on a variety of projects—from elegant personal portfolios to intelligent, API-driven web applications—each focused on performance, accessibility, and user-centered design.</p>
+
+  <p>My expertise extends into AI development, particularly in building conversational agents powered by LLMs. I’ve developed advanced AI chatbots using OpenAI’s GPT models and integrated them into real-time applications like Telegram bots, knowledge bases, and automated customer support systems. I’m also experienced with prompt engineering and token optimization to enhance interaction flow and response quality.</p>
+
+  <p>As the global tech industry evolves, I’ve positioned myself to stay at the forefront. I actively engage in developer communities, showcase my work in technical showcases, and continue to upgrade my skills through cutting-edge online programs. My projects have been featured in virtual tech conclaves and innovation summits, gaining attention for their originality and implementation depth.</p>
+
+  <p>I hold several certifications from top-tier online learning platforms, covering full-stack web development, AI systems, and scalable backend architecture. These programs have sharpened both my theoretical understanding and practical skills—equipping me with a well-rounded approach to real-world development challenges.</p>
+
+  <p>Every line of code I write is a step toward building meaningful digital experiences. I approach programming as both science and art—emphasizing modular architecture, maintainability, and modern UI/UX standards. My GitHub repositories, Telegram AI deployments, and interactive demos reflect a strong portfolio that stands on its own.</p>
+
+  <p>As I continue to grow, I am confident that today’s leading tech companies will recognize the potential in my work. I aim to contribute to teams building the future of AI, automation, and the web. With my solid foundation, rapid adaptability, and genuine passion for technology, I’m ready for the challenges of tomorrow’s Internet.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>HTML, CSS, JavaScript</li>
+    <li>Node.js, Express.js, MongoDB</li>
+    <li>AI Bots & LLMs (GPT APIs)</li>
+    <li>Telegram Bot Development</li>
+    <li>Responsive Web Design</li>
+    <li>UI/UX Design Principles</li>
+    <li>REST APIs & JSON</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>AI Telegram Chatbot</h3>
+      <p>Smart OpenAI-based chatbot with memory, logs, and LLM prompt tuning.</p>
+    </div>
+    <div class="project-card">
+      <h3>MathsBot</h3>
+      <p>Telegram quiz bot with trigonometry questions, scoring, and UPI rewards.</p>
+    </div>
+    <div class="project-card">
+      <h3>Seed Scraper</h3>
+      <p>Automated seed analysis tool for Minecraft, with structure coordinates fetch.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Let’s connect and build something amazing.</p>
+  <div class="social-links">
+    <a href="https://instagram.com/tuku.exe" target="_blank"><img src="instagram-icon.png" alt="Instagram" /></a>
+    <a href="https://t.me/tukuexe" target="_blank"><img src="telegram-icon.png" alt="Telegram" /></a>
+    <a href="https://github.com/tukuexe" target="_blank"><img src="github-icon.png" alt="GitHub" /></a>
+    <a href="https://twitter.com/tukuexe" target="_blank"><img src="twitter-icon.png" alt="Twitter" /></a>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="companies">
+      <p>Inspired by innovations from:</p>
+      <div class="company-list">
+  <span>Google</span> <span>Microsoft</span> <span>Apple</span> <span>Amazon</span> 
+  <span>Meta</span> <span>OpenAI</span> <span>GitHub</span> <span>Stack Overflow</span> 
+  <span>Intel</span> <span>NVIDIA</span> <span>IBM</span> <span>Oracle</span>
+   <span>Adobe</span> <span>Samsung</span> <span>Huawei</span> <span>Salesforce</span> 
+  <span>Zoom</span> <span>Notion</span> <span>Discord</span> <span>LinkedIn</span> 
+  <span>Reddit</span> <span>Shopify</span> <span>Netflix</span> <span>SpaceX</span> 
+  <span>Tesla</span> <span>Twitch</span> <span>Stripe</span> <span>Figma</span> 
+  <span>Atlassian</span> <span>Bitbucket</span> <span>Trello</span> <span>DigitalOcean</span> 
+  <span>Heroku</span> <span>Cloudflare</span> <span>Mozilla</span> <span>Airtable</span> 
+  <span>Vercel</span> <span>Supabase</span> <span>Docker</span> <span>Ubuntu</span> 
+  <span>JetBrains</span>
+    </div>
+    <p>© 2025 Tuku Exe. All rights reserved.</p>
+  </footer>  <script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
+<script src="script.js"></script>
